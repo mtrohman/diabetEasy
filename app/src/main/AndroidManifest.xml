@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gulasehat.android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.gulasehat.android.FlinkApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup,android:label"
+        tools:targetApi="n">
+        <activity
+            android:name="com.gulasehat.android.FullscreenActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label=""
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.CrashActivity"
+            android:label="@string/error"
+            android:process=":error_activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="cat.ereza.customactivityoncrash.ERROR" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gulasehat.android.OtherPostActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog" />
+        <activity
+            android:name="com.gulasehat.android.PostsActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.gulasehat.android.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.gulasehat.android.PasswordResetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.gulasehat.android.AuthorsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.PagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.ArchiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.SocialAccountsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gulasehat.android.NotificationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.ThemesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"
+
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+        <activity
+            android:name="com.gulasehat.android.EditProfileActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.ContactActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" />
+        <activity
+            android:name="com.gulasehat.android.ProfileActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.CommentsActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.PostActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label=""
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gulasehat.android.PhotoActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.LanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.TagCloudActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.flinkapp.com"
+                    android:scheme="https" />
+                <data
+                    android:host="www.flinkapp.com"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gulasehat.android.FaqActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gulasehat.android.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name="com.gulasehat.android.PasswordChangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar"
+
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.gulasehat.android.CategoriesActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity android:name="com.gulasehat.android.FavoritesActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <service android:name="com.gulasehat.android.FlinkMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

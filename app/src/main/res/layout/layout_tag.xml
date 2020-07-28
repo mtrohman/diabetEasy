@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/content"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:focusableInTouchMode="false"
+    android:layout_margin="5dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/nameContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:background="@drawable/tag_left_bg"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:maxEms="15"
+            android:ellipsize="end"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            tools:text="Test pastırmalı çfiest pastırmalı çfi est pastırmalı çfi  testi" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/countContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1">
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingStart="11dp"
+            android:paddingEnd="11dp"
+
+            android:background="@drawable/tag_right_bg"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            tools:text="0" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

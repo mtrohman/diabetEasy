@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="false">
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/chip_1_bg"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingEnd="14dp"
+        android:paddingStart="14dp"
+        android:textAllCaps="true"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        tools:text="Test"/>
+</RelativeLayout>

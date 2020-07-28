@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="PostFragment" type="id" />
+    <item name="CategoryFragment" type="id" />
+
+    <item name="name" type="id" />
+    <item name="email" type="id" />
+    <item name="website" type="id" />
+    <item name="password" type="id" />
+    <item name="gender" type="id" />
+    <item name="job" type="id" />
+    <item name="bio" type="id" />
+    <item name="commentView" type="id"/>
+
+    <item name="exo_progress_placeholder" type="id"/>
+    <item name="exo_progress" type="id"/>
+</resources>

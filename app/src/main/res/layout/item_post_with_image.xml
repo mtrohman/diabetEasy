@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <ImageView
+        android:id="@+id/postPicture"
+        android:layout_width="@dimen/posts_img_width"
+        android:layout_height="@dimen/posts_img_height"
+        android:background="#f6f6f6" />
+
+    <ImageButton
+        android:id="@+id/favoriteBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?selectableItemBackground"
+        android:src="@drawable/ic_fav_normal" />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/postPicture"
+        android:paddingBottom="11dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#232140"
+            android:textSize="16sp"
+            tools:text="Google hires Airbnb’s Shaun Stewart to help bring self-driving cars to market" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/postLockIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="1dp"
+                    android:src="@drawable/icon_lock"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+
+                    />
+
+                <Button
+                    android:id="@+id/postCommentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/icon_comment_small"
+                    android:drawablePadding="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="2dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#232140"
+                    android:textSize="13sp"
+                    tools:text="19"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/postDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#66232140"
+                android:textSize="13sp"
+                tools:text="16 MARCH 2016" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+

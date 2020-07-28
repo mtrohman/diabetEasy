@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <LinearLayout
+            android:id="@+id/genderContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.gulasehat.android.widget.EditableProfileItem
+                android:id="@+id/authorGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:epi_icon="@drawable/icon_gender_gray"
+                app:epi_label="@string/gender_hint"
+                app:epi_value="@string/unspecified"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividerColor"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jobContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.gulasehat.android.widget.EditableProfileItem
+                android:id="@+id/authorJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:epi_icon="@drawable/icon_work_gray"
+                app:epi_label="@string/job_hint"
+                app:epi_value="@string/unspecified"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividerColor"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bioContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.gulasehat.android.widget.EditableProfileItem
+                android:id="@+id/authorBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:epi_icon="@drawable/icon_bio_gray"
+                app:epi_label="@string/bio_hint"
+                app:epi_value="@string/unspecified"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividerColor"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+

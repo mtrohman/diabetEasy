@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <array name="filter_post_texts">
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_date_asc</item>
+    <item>@string/filter_comment_count_desc</item>
+    <item>@string/filter_comment_count_asc</item>
+  </array>
+  <array name="filter_post_keys">
+    <item>post_date|desc</item>
+    <item>post_date|asc</item>
+    <item>comment_count|desc</item>
+    <item>comment_count|asc</item>
+  </array>
+  <array name="filter_search_post_texts">
+    <item>@string/default_text</item>
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_date_asc</item>
+    <item>@string/filter_comment_count_desc</item>
+    <item>@string/filter_comment_count_asc</item>
+  </array>
+  <array name="filter_search_post_keys">
+    <item>relevance</item>
+    <item>post_date|desc</item>
+    <item>post_date|asc</item>
+    <item>comment_count|desc</item>
+    <item>comment_count|asc</item>
+  </array>
+  <array name="filter_favorite_texts">
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_date_asc</item>
+    <item>@string/filter_comment_count_desc</item>
+    <item>@string/filter_comment_count_asc</item>
+  </array>
+  <array name="filter_favorite_keys">
+    <item>post_date|desc</item>
+    <item>post_date|asc</item>
+    <item>comment_count|desc</item>
+    <item>comment_count|asc</item>
+  </array>
+  <array name="filter_tag_texts">
+    <item>@string/filter_tag_count_desc</item>
+    <item>@string/filter_tag_count_asc</item>
+    <item>@string/filter_tag_name_asc</item>
+    <item>@string/filter_tag_name_desc</item>
+  </array>
+  <array name="filter_tag_keys">
+    <item>count|desc</item>
+    <item>count|asc</item>
+    <item>name|asc</item>
+    <item>name|desc</item>
+  </array>
+  <array name="filter_category_texts">
+    <item>@string/filter_category_name_asc</item>
+    <item>@string/filter_category_name_desc</item>
+    <item>@string/filter_category_content_count_desc</item>
+    <item>@string/filter_category_content_count_asc</item>
+  </array>
+  <array name="filter_category_keys">
+    <item>name|asc</item>
+    <item>name|desc</item>
+    <item>count|desc</item>
+    <item>count|asc</item>
+  </array>
+  <array name="filter_author_texts">
+    <item>@string/filter_author_name_asc</item>
+    <item>@string/filter_author_name_desc</item>
+    <item>@string/filter_author_username_asc</item>
+    <item>@string/filter_author_username_desc</item>
+    <item>@string/filter_author_post_count_asc</item>
+    <item>@string/filter_author_post_count_desc</item>
+  </array>
+  <array name="filter_author_keys">
+    <item>display_name|asc</item>
+    <item>display_name|desc</item>
+    <item>user_nicename|asc</item>
+    <item>user_nicename|desc</item>
+    <item>post_count|asc</item>
+    <item>post_count|desc</item>
+  </array>
+  <array name="filter_search_author_texts">
+    <item>@string/default_text</item>
+    <item>@string/filter_author_name_asc</item>
+    <item>@string/filter_author_name_desc</item>
+    <item>@string/filter_author_username_asc</item>
+    <item>@string/filter_author_username_desc</item>
+    <item>@string/filter_author_post_count_asc</item>
+    <item>@string/filter_author_post_count_desc</item>
+  </array>
+  <array name="filter_search_author_keys">
+    <item>relevance</item>
+    <item>display_name|asc</item>
+    <item>display_name|desc</item>
+    <item>user_nicename|asc</item>
+    <item>user_nicename|desc</item>
+    <item>post_count|asc</item>
+    <item>post_count|desc</item>
+  </array>
+  <!-- SAYFA LİSTESİ FİLTRELERİ -->
+  <array name="filter_page_texts">
+    <item>@string/filter_custom_sorting</item>
+    <item>@string/filter_date_asc</item>
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_title_asc</item>
+    <item>@string/filter_title_desc</item>
+  </array>
+  <array name="filter_page_keys">
+    <item>custom_sorting</item>
+    <item>post_date|asc</item>
+    <item>post_date|desc</item>
+    <item>post_title|asc</item>
+    <item>post_title|desc</item>
+  </array>
+  <!-- ARAMA SAYFA LİSTESİ FİLTRELERİ -->
+  <array name="filter_search_page_texts">
+    <item>@string/default_text</item>
+    <item>@string/filter_custom_sorting</item>
+    <item>@string/filter_date_asc</item>
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_title_asc</item>
+    <item>@string/filter_title_desc</item>
+  </array>
+  <array name="filter_search_page_keys">
+    <item>relevance</item>
+    <item>custom_sorting</item>
+    <item>post_date|asc</item>
+    <item>post_date|desc</item>
+    <item>post_title|asc</item>
+    <item>post_title|desc</item>
+  </array>
+  <array name="filter_archive_texts">
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_date_asc</item>
+  </array>
+  <array name="filter_archive_keys">
+    <item>desc</item>
+    <item>asc</item>
+  </array>
+  <array name="filter_comment_keys_with_rates">
+    <item>comment_date_gmt|desc</item>
+    <item>comment_date_gmt|asc</item>
+    <item>comment_like_count|desc</item>
+    <item>comment_like_count|asc</item>
+  </array>
+  <array name="filter_comment_keys_without_rates">
+    <item>comment_date_gmt|desc</item>
+    <item>comment_date_gmt|asc</item>
+  </array>
+  <array name="filter_comment_texts_with_rates">
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_date_asc</item>
+    <item>@string/filter_like_desc</item>
+    <item>@string/filter_like_asc</item>
+  </array>
+  <array name="filter_comment_texts_without_rates">
+    <item>@string/filter_date_desc</item>
+    <item>@string/filter_date_asc</item>
+  </array>
+  <string-array name="themes">
+    <item>Blue</item>
+    <item>Red</item>
+    <item>Pink</item>
+    <item>Purple</item>
+    <item>DeepPurple</item>
+    <item>Indigo</item>
+    <item>LightBlue</item>
+    <item>Cyan</item>
+    <item>Teal</item>
+    <item>Green</item>
+    <item>LightGreen</item>
+    <item>Lime</item>
+    <item>Black</item>
+    <item>Amber</item>
+    <item>Orange</item>
+    <item>DeepOrange</item>
+    <item>Brown</item>
+    <item>Grey</item>
+  </string-array>
+  <string-array name="gender">
+    <item>@string/female</item>
+    <item>@string/male</item>
+  </string-array>
+  <array name="dot_colors">
+    <item>@color/white</item>
+    <item>@color/white</item>
+    <item>@color/white</item>
+  </array>
+  <string-array name="language_names">
+    <item>Türkçe</item>
+    <item>Azərbaycan Dili</item>
+    <item>Deutsch</item>
+    <item>English</item>
+    <item>Français</item>
+    <item>Русский</item>
+    <item>Українська</item>
+    <item>‏اردو‏</item>
+    <item>‏العربية‏</item>
+    <item>हिन्दी</item>
+  </string-array>
+  <string-array name="language_codes">
+    <item>tr</item>
+    <item>az</item>
+    <item>de</item>
+    <item>en</item>
+    <item>fr</item>
+    <item>ru</item>
+    <item>uk</item>
+    <item>ur</item>
+    <item>ar</item>
+    <item>hi</item>
+  </string-array>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "595161887800",
+    "firebase_url": "https://wp-diabetes.firebaseio.com",
+    "project_id": "wp-diabetes",
+    "storage_bucket": "wp-diabetes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595161887800:android:0c27b0241c86561779e2cd",
+        "android_client_info": {
+          "package_name": "com.gulasehat.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595161887800-g50fnpet5a3fh9gd0kiioc89lq8ru1c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADEV--bI8BqcUs8P6k6f2_Gd2OkUtz1mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595161887800-g50fnpet5a3fh9gd0kiioc89lq8ru1c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

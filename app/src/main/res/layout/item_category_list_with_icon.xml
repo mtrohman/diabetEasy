@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="67dp"
+    android:background="@color/CyanColorAccent"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:id="@+id/iconContainer"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/oval_white"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <com.gulasehat.android.widget.TextAwesome
+            android:id="@+id/iconFontAwesome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <com.gulasehat.android.widget.TextMaterial
+            android:id="@+id/iconMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@{category.name}"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Pasta Tarifleri" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:text="1" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/take_photo" android:title="@string/take_photo" android:icon="@drawable/bs_photo_icon"/>
+    <item android:id="@+id/choose_photo" android:title="@string/choose_from_gallery" android:icon="@drawable/bs_album_icon"/>
+</menu>

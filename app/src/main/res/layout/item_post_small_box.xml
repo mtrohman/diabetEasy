@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_bg">
+
+        <androidx.cardview.widget.CardView
+            cardPreventCornerOverlap="false"
+            contentPadding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="164dp">
+
+                    <ImageView
+                        android:id="@+id/postPicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/placeholder_top_corners_bg" />
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/post_gradient_bg_top_corners" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="14dp"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/postLockIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/icon_lock_big"
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            />
+
+                        <Button
+                            android:id="@+id/postCommentCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableEnd="@drawable/icon_comment_big"
+                            android:drawablePadding="4dp"
+                            android:layout_marginStart="5dp"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            tools:text="19"/>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/favoriteBtn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?selectableItemBackground"
+                        android:src="@drawable/ic_fav_normal" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/postTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-medium"
+                        android:maxLines="3"
+                        android:padding="14dp"
+                        android:textColor="@color/text"
+                        android:textSize="16sp"
+                        tools:text="Yeni Transfer Sezonu Başladı." />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

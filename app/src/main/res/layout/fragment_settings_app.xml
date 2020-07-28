@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingEnd="24dp"
+        android:paddingStart="24dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/notification"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/notification_desc"
+            android:textColor="#757575"
+            android:textSize="14sp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"/>
+
+        <com.gulasehat.android.widget.CustomSwitch
+            android:id="@+id/settings_notify_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cs_icon="@drawable/icon_notification_gray"
+            app:cs_text="@string/notification_status" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <com.gulasehat.android.widget.CustomSwitch
+            android:id="@+id/settings_notify_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cs_icon="@drawable/icon_sound_gray"
+            app:cs_text="@string/notification_sound" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <com.gulasehat.android.widget.CustomSwitch
+            android:id="@+id/settings_notify_vibrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cs_icon="@drawable/icon_vibration_gray"
+            app:cs_text="@string/vibration" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/general"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"/>
+
+        <com.gulasehat.android.widget.CustomPreference
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cp_icon="@drawable/icon_language_gray"
+            app:cp_text="@string/app_language"
+            app:cp_value="Türkçe" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <com.gulasehat.android.widget.CustomPreference
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cp_icon="@drawable/icon_theme_gray"
+            app:cp_text="@string/app_theme"
+            app:cp_value="Mavi" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4" />
+
+        <com.gulasehat.android.widget.CustomPreference
+            android:id="@+id/flush"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cp_icon="@drawable/icon_flush_gray"
+            app:cp_text="@string/flush_settings"
+            app:cp_value="@string/flush_settings_desc"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/about"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"/>
+
+        <com.gulasehat.android.widget.CustomPreference
+            android:id="@+id/version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cp_icon="@drawable/icon_phone_gray"
+            app:cp_text="@string/version"
+            app:cp_value="0.0.1"
+            app:cp_hide_arrow="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E4E4E4"
+            android:visibility="gone"/>
+
+        <com.gulasehat.android.widget.CustomPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cp_icon="@drawable/icon_licence_gray"
+            app:cp_text="@string/open_source_licence"
+            app:cp_value="@string/open_source_licence_desc"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

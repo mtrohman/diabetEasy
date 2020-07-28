@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingStart="7dp"
+    android:paddingEnd="7dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="36dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Türkçe"
+        android:textSize="14sp"
+        android:textColor="@color/text"
+        android:layout_toEndOf="@id/flag"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        />
+
+    <ImageView
+        android:id="@+id/selection"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerInside"
+        tools:src="@drawable/icon_tick_white"
+        android:background="@drawable/radio_bg_selected"/>
+</RelativeLayout>

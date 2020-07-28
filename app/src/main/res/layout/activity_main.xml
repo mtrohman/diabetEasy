@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gulasehat.android.widget.FlinkDrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:titleTextColor="@color/white"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                >
+
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="start"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                app:tabIndicatorHeight="4dp"
+                app:tabIndicatorColor="?attr/colorPrimary"
+                app:elevation="0dp"
+                app:tabGravity="fill"
+                app:tabPaddingStart="20dp"
+                app:tabPaddingEnd="20dp"
+                app:tabMaxWidth="500dp"
+                app:tabMode="fixed"/>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottomAdView"
+                >
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill_vertical"
+
+                    />
+            </FrameLayout>
+
+            <com.gulasehat.android.widget.BottomAdView
+                android:id="@+id/bottomAdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ad_placement="HOME"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include layout="@layout/layout_navigation" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+</com.gulasehat.android.widget.FlinkDrawerLayout>

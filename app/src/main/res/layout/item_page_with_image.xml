@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/pagePicture"
+        android:layout_width="@dimen/posts_img_width"
+        android:layout_height="@dimen/posts_img_height"
+        android:background="?attr/colorPrimary"/>
+
+    <RelativeLayout
+        android:id="@+id/pageContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="11dp"
+        android:layout_toEndOf="@+id/pagePicture">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Google hires Airbnb’s Shaun Stewart to help bring self-driving cars to market"
+            android:id="@+id/pageTitle"
+            android:textColor="#232140"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/pageCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="19"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/commentIcon"
+                android:layout_marginEnd="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="13sp"
+                android:textColor="#232140"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_comment_small"
+                android:id="@+id/commentIcon"
+                android:layout_alignBottom="@+id/pageCommentCount"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/pageDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="16 MARCH 2016"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="13sp"
+                android:textColor="#66232140"
+                android:layout_alignBaseline="@+id/pageCommentCount"
+                android:layout_alignBottom="@+id/pageCommentCount"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

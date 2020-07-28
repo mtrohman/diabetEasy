@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_bg"
+        >
+
+        <com.google.android.gms.ads.formats.UnifiedNativeAdView
+            android:id="@+id/unifiedNativeAdView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            cardPreventCornerOverlap="false"
+            contentPadding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0dp">
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/adProgress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:id="@+id/adContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="192dp">
+
+
+                        <com.google.android.gms.ads.formats.MediaView
+                            android:id="@+id/native_ad_media_admob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ececec"
+                            android:foregroundGravity="center"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ad_bg"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingStart="6dp"
+                            android:paddingTop="0dp"
+                            android:paddingEnd="7dp"
+                            android:paddingBottom="1dp"
+                            android:text="@string/ad"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/ad_choices_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:orientation="horizontal" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="18dp"
+                        android:paddingTop="14dp"
+                        android:paddingEnd="18dp"
+                        android:paddingBottom="17dp">
+
+                        <RelativeLayout
+                            android:id="@+id/top_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/sponsored"
+                                android:textColor="?attr/colorPrimary"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/native_ad_call_to_action"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="26dp"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/button_bg"
+                                android:fontFamily="sans-serif-medium"
+                                android:minWidth="0dp"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                tools:text="Satın Al" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/top_container"
+                            android:layout_marginTop="14dp">
+
+
+                            <TextView
+                                android:id="@+id/native_ad_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="sans-serif-medium"
+                                android:maxLines="1"
+                                android:textColor="@color/text"
+                                android:textSize="20sp"
+                                tools:text="Google hires Airbnb’s Shaun Stewart to help bring" />
+
+                            <TextView
+                                android:id="@+id/native_ad_body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/native_ad_title"
+                                android:layout_marginTop="10dp"
+                                android:ellipsize="end"
+                                android:lineSpacingExtra="5dp"
+                                android:maxLines="2"
+                                android:textColor="@color/hintColor"
+                                android:textSize="15sp"
+                                tools:text="Beden: %100 Pamuk Polo Yaka Erkek T-Shirt, Farklı renk seçenekleri ile." />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        </com.google.android.gms.ads.formats.UnifiedNativeAdView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

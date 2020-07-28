@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#BBDEFB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="text">#232140</color>
+    <color name="hint">#ccffffff</color>
+    <color name="navTextColor">#757575</color>
+    <color name="black">#000000</color>
+    <color name="textColor">#757575</color>
+    <color name="hintColor">#80232140</color>
+    <color name="badgeBgGray">#91909F</color>
+    <color name="colorGreen">#1baf5e</color>
+    <color name="colorRed">#eb4b36</color>
+    <color name="grayTextColor">#949494</color>
+
+
+    <color name="BlueColorPrimary">#2196F3</color>
+    <color name="BlueColorPrimaryDark">#1976D2</color>
+    <color name="BlueColorAccent">#BBDEFB</color>
+
+    <color name="RedColorPrimary">#F44336</color>
+    <color name="RedColorPrimaryDark">#D32F2F</color>
+    <color name="RedColorAccent">#FFCDD2</color>
+
+    <color name="PinkColorPrimary">#E91E63</color>
+    <color name="PinkColorPrimaryDark">#C2185B</color>
+    <color name="PinkColorAccent">#F8BBD0</color>
+
+    <color name="PurpleColorPrimary">#9C27B0</color>
+    <color name="PurpleColorPrimaryDark">#7B1FA2</color>
+    <color name="PurpleColorAccent">#E1BEE7</color>
+    <color name="PurpleColorButton">#FF4081</color>
+
+    <color name="DeepPurpleColorPrimary">#673AB7</color>
+    <color name="DeepPurpleColorPrimaryDark">#512DA8</color>
+    <color name="DeepPurpleColorAccent">#D1C4E9</color>
+
+    <color name="IndigoColorPrimary">#3F51B5</color>
+    <color name="IndigoColorPrimaryDark">#303F9F</color>
+    <color name="IndigoColorAccent">#C5CAE9</color>
+
+    <color name="LightBlueColorPrimary">#03A9F4</color>
+    <color name="LightBlueColorPrimaryDark">#0288D1</color>
+    <color name="LightBlueColorAccent">#B3E5FC</color>
+
+    <color name="CyanColorPrimary">#00BCD4</color>
+    <color name="CyanColorPrimaryDark">#0097A7</color>
+    <color name="CyanColorAccent">#B2EBF2</color>
+
+    <color name="TealColorPrimary">#009688</color>
+    <color name="TealColorPrimaryDark">#00796B</color>
+    <color name="TealColorAccent">#B2DFDB</color>
+
+    <color name="GreenColorPrimary">#4CAF50</color>
+    <color name="GreenColorPrimaryDark">#388E3C</color>
+    <color name="GreenColorAccent">#C8E6C9</color>
+
+    <color name="LightGreenColorPrimary">#8BC34A</color>
+    <color name="LightGreenColorPrimaryDark">#689F38</color>
+    <color name="LightGreenColorAccent">#DCEDC8</color>
+
+    <color name="LimeColorPrimary">#CDDC39</color>
+    <color name="LimeColorPrimaryDark">#AFB42B</color>
+    <color name="LimeColorAccent">#F0F4C3</color>
+
+    <color name="BlackColorPrimary">#424242</color>
+    <color name="BlackColorPrimaryDark">#000000</color>
+    <color name="BlackColorAccent">#8a8989</color>
+
+    <color name="AmberColorPrimary">#FFC107</color>
+    <color name="AmberColorPrimaryDark">#FFA000</color>
+    <color name="AmberColorAccent">#FFECB3</color>
+
+    <color name="OrangeColorPrimary">#FF9800</color>
+    <color name="OrangeColorPrimaryDark">#F57C00</color>
+    <color name="OrangeColorAccent">#FFE0B2</color>
+
+    <color name="DeepOrangeColorPrimary">#FF5722</color>
+    <color name="DeepOrangeColorPrimaryDark">#E64A19</color>
+    <color name="DeepOrangeColorAccent">#FFCCBC</color>
+
+    <color name="BrownColorPrimary">#795548</color>
+    <color name="BrownColorPrimaryDark">#5D4037</color>
+    <color name="BrownColorAccent">#D7CCC8</color>
+
+    <color name="GreyColorPrimary">#9E9E9E</color>
+    <color name="GreyColorPrimaryDark">#616161</color>
+    <color name="GreyColorAccent">#F5F5F5</color>
+
+    <color name="dividerColor">#d2d2d2</color>
+    <color name="chip_bg">#DFE0E8</color>
+    <color name="chip_bg_hover">#e4e4e7</color>
+    <color name="playlist_item_color">#f8f8f8</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="red">#D50000</color>
+    <color name="post_img_bg_color">#F6F6F6</color>
+    <color name="ad_bg">#f2f2f2</color>
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/playlist_bg"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="16dp">
+
+        <RelativeLayout
+            android:id="@+id/iconContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/white_oval_with_stroke"
+                android:cropToPadding="true"
+                android:padding="1dp"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/white_oval_with_stroke"
+                android:src="@drawable/icon_playlist_black"
+                android:cropToPadding="true"
+                android:padding="1dp"
+                android:scaleType="centerInside"
+                />
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:id="@+id/loading"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:mpb_progressStyle="circular"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                tools:visibility="visible"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/controlContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@id/iconContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+
+
+                <com.google.android.exoplayer2.ui.PlayerView
+                    android:id="@+id/playerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    app:show_buffering="never"
+                    app:player_layout_id="@layout/player_audio"
+                    app:hide_on_touch="false"
+                    app:show_timeout="0"
+                    app:auto_show="true"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:id="@+id/prev"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/white_oval_with_stroke"
+                        android:src="@drawable/icon_playlist_prev" />
+
+                    <ImageButton
+                        android:id="@+id/play"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/colored_oval"
+                        android:src="@drawable/icon_playlist_play" />
+
+                    <ImageButton
+                        android:id="@+id/next"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginEnd="14dp"
+                        android:background="@drawable/white_oval_with_stroke"
+                        android:src="@drawable/icon_playlist_next" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/playlistContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e3e3e3"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/playlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

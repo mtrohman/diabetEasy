@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="false">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chip_bordered_bg"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="7dp"
+        android:paddingEnd="14dp"
+        android:paddingStart="14dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        tools:text="Test ksadk asşd kasşldkas şldk aslşdk asdas okdasş das dls şakdşask das" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

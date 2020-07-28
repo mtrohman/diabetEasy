@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.gulasehat.android"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('flink.jks')
+            keyAlias 'flink'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "BASEURL", BaseUrl
+            buildConfigField "String", "APIPATH", ApiPath
+            buildConfigField "String", "ASSETPATH", AssetPath
+        }
+        debug {
+            signingConfig signingConfigs.release
+            debuggable true
+
+            buildConfigField "String", "BASEURL", BaseUrl
+            buildConfigField "String", "APIPATH", ApiPath
+            buildConfigField "String", "ASSETPATH", AssetPath
+
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.android.support:design:29.0.0'
+
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.4'
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.cocosw:bottomsheet:1.5.0'
+
+
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+    implementation 'com.github.Plumillon:ChipView:1.2.0'
+
+    implementation 'org.sufficientlysecure:html-textview:3.5'
+    implementation 'cc.cloudist.acplibrary:library:1.2.1'
+    implementation 'com.jsibbold:zoomage:1.1.0'
+
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.0.9'
+    implementation 'com.github.bhargavms:DotLoader:1.1.1'
+
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.2.0'
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    implementation 'com.rockerhieu:rv-adapter-endless:1.2'
+
+    implementation 'com.facebook.android:audience-network-sdk:5.6.0'
+
+    implementation 'com.yanyusong.y_divideritemdecoration:y_divideritemdecoration:2.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.9.6'
+
+    implementation 'cat.ereza:customactivityoncrash:2.2.0'
+    implementation 'me.grantland:autofittextview:0.2.+'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationMenuItem">
+        <attr name="nav_text" format="string" />
+        <attr name="nav_text_color" format="color" />
+        <attr name="nav_icon" format="reference" />
+        <attr name="nav_icon_color" format="color" />
+        <attr name="nav_badge_color" format="color" />
+        <attr name="nav_badge_count" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="EditableProfileItem">
+        <attr name="epi_color" format="color"/>
+        <attr name="epi_icon" format="reference" />
+        <attr name="epi_label" format="string" />
+        <attr name="epi_value" format="reference" />
+        <attr name="epi_edit_icon" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="BottomAdView">
+        <attr name="ad_placement" format="enum">
+            <enum name="HOME" value="1"/>
+            <enum name="CATEGORIES" value="2"/>
+            <enum name="POST_LIST" value="3"/>
+            <enum name="POST_PAGE_DETAIL" value="4"/>
+            <enum name="PAGE_LIST" value="5"/>
+            <enum name="AUTHOR_LIST" value="6"/>
+            <enum name="ARCHIVE" value="7"/>
+            <enum name="TAG_CLOUD" value="8"/>
+            <enum name="SOCIAL_ACCOUNTS" value="9"/>
+            <enum name="SEARCH" value="10"/>
+            <enum name="FAQ" value="11"/>
+            <enum name="NOTIFICATIONS" value="12"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSwitch">
+        <attr name="cs_icon" format="reference" />
+        <attr name="cs_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomPreference">
+        <attr name="cp_icon" format="reference" />
+        <attr name="cp_text" format="string" />
+        <attr name="cp_value" format="string" />
+        <attr name="cp_hide_arrow" format="boolean"/>
+        <attr name="cp_color_tint" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f8f8f8">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/sound_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/oval_white"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Serkan Kaya dsa das das das das das das das  - Sor"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/icon"
+        android:textSize="15sp"
+        android:textColor="@color/text"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginEnd="70dp"
+        />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        tools:text="05:47"
+        android:textColor="?attr/colorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="12dp"
+        />
+
+</RelativeLayout>

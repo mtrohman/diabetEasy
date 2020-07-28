@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <LinearLayout
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.gulasehat.android.widget.EditableProfileItem
+                android:id="@+id/authorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:epi_icon="@drawable/icon_person_gray"
+                app:epi_label="@string/name_hint"
+                app:epi_value="@string/unspecified" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividerColor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/emailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.gulasehat.android.widget.EditableProfileItem
+                android:id="@+id/authorEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:epi_icon="@drawable/icon_mail_bordered_gray"
+                app:epi_label="@string/email_hint"
+                app:epi_value="@string/unspecified" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividerColor"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/websiteContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.gulasehat.android.widget.EditableProfileItem
+                android:id="@+id/authorWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:epi_icon="@drawable/icon_website_gray"
+                app:epi_label="@string/website_hint"
+                app:epi_value="@string/unspecified" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/dividerColor" />
+
+        </LinearLayout>
+
+
+        <com.gulasehat.android.widget.EditableProfileItem
+            android:id="@+id/authorPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:epi_icon="@drawable/icon_lock_gray"
+            app:epi_label="@string/change_password" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerColor" />
+
+        <com.gulasehat.android.widget.EditableProfileItem
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:epi_color="@color/red"
+            app:epi_edit_icon="false"
+            app:epi_icon="@drawable/icon_exit_gray"
+            app:epi_label="@string/logout" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerColor" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
