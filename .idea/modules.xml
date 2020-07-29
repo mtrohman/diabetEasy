@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_Aplikasi_Persadia-diabetEasy.iml" filepath="$PROJECT_DIR$/00_Aplikasi_Persadia-diabetEasy.iml" group="diabetEasy" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="diabetEasy/app" />
       <module fileurl="file://$PROJECT_DIR$/diabetEasy.iml" filepath="$PROJECT_DIR$/diabetEasy.iml" group="diabetEasy" />
+      <module fileurl="file://$PROJECT_DIR$/app/diabetEasy-app.iml" filepath="$PROJECT_DIR$/app/diabetEasy-app.iml" group="diabetEasy/app" />
     </modules>
   </component>
 </project>
